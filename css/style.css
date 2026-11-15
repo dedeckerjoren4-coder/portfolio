@@ -1,0 +1,38 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 3px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #f3f4f6;
+}
+
+.nav-link[aria-current="page"] {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.nav-link[aria-current="page"]:hover {
+    background-color: #bfdbfe;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid #9ca3af;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}

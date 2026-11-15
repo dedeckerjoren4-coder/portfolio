@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Joren De Decker</title>
+<meta name="description" content="Bekijk de projecten van Joren De Decker, met uitleg over het doel, de opbouw en de gebruikte technieken.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex min-h-screen flex-col bg-gray-50 text-gray-800">
+
+    <a
+        href="#inhoud"
+        class="sr-only focus:not-sr-only focus:absolute
+               focus:left-3 focus:top-3 focus:z-50
+               focus:rounded-lg focus:bg-white
+               focus:px-4 focus:py-3 focus:text-blue-800"
+    >
+        Ga naar de inhoud
+    </a>
+
+    <header class="border-b border-gray-200 bg-white">
+        <div
+            class="mx-auto flex max-w-6xl flex-wrap items-center
+                   justify-between gap-3 px-4 py-4"
+        >
+            <a href="index.html" class="text-xl font-semibold text-blue-800">
+                Joren De Decker
+            </a>
+
+            <input
+                type="checkbox"
+                id="menu-knop"
+                class="peer sr-only md:hidden"
+            >
+
+            <label
+                for="menu-knop"
+                class="cursor-pointer rounded-lg border border-gray-400
+                       px-3 py-2 peer-focus-visible:outline-2
+                       peer-focus-visible:outline-offset-3
+                       peer-focus-visible:outline-blue-700 md:hidden"
+            >
+                Menu
+            </label>
+
+            <nav
+                aria-label="Hoofdmenu"
+                class="hidden w-full peer-checked:block md:block md:w-auto"
+            >
+                <ul class="flex flex-col gap-2 md:flex-row">
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="portfolio.html"
+                            class="nav-link"
+                            aria-current="page"
+                        >
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="project.html" class="nav-link">
+                            Project
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main
+        id="inhoud"
+        tabindex="-1"
+        class="mx-auto w-full max-w-6xl flex-1 px-4 py-8"
+    >
+        <p
+            class="mb-2 text-sm font-semibold uppercase
+                   tracking-widest text-blue-700"
+        >
+            Mijn werk
+        </p>
+
+        <h1 class="mb-4 text-3xl font-semibold tracking-tight">
+            Portfolio
+        </h1>
+
+        <p class="mb-8 max-w-2xl leading-relaxed text-gray-600">
+            Hier verzamel ik mijn projecten. Per project beschrijf ik
+            de opdracht, mijn werkwijze en wat ik geleerd heb.
+        </p>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+            <article
+                class="overflow-hidden rounded-lg border
+                       border-gray-200 bg-white shadow-sm"
+            >
+                <img
+                    src="images/placeholder.png"
+                    alt="Tijdelijke voorbeeldafbeelding bij het project"
+                    width="1200"
+                    height="800"
+                    class="aspect-video w-full object-cover"
+                >
+
+                <div class="p-5">
+                    <h2 class="mb-2 text-xl font-semibold">
+                        Mijn netwerkproject
+                    </h2>
+
+                    <p class="mb-4 leading-relaxed text-gray-600">
+                        Lees meer over het doel van het project,
+                        mijn aanpak en de resultaten.
+                    </p>
+
+                    <a
+                        href="project.html"
+                        class="font-semibold text-blue-700
+                               underline hover:text-blue-900"
+                    >
+                        Lees meer over dit project
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="mt-10 border-t border-gray-200 bg-white">
+        <div
+            class="mx-auto flex max-w-6xl flex-col gap-2
+                   px-4 py-6 text-sm text-gray-600
+                   sm:flex-row sm:justify-between"
+        >
+            <p>© 2026 Joren De Decker</p>
+
+            <a
+                href="mailto:dedeckerjoren4@gmail.com"
+                class="break-all text-blue-700 underline hover:text-blue-900"
+            >
+                dedeckerjoren4@gmail.com
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
